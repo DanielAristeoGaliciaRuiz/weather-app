@@ -1,0 +1,168 @@
+:root{
+  --section-overlay:rgb(0,0,0,0.7);
+  --background-overlay:rgb(0,0,0,0.2);
+}
+html{
+  height: 100%;
+  box-sizing:border-box;
+  /* background: linear-gradient( #B3E5FC 0%, #60cdff 100%); */
+  background:url("https://articles-images.sftcdn.net/wp-content/uploads/sites/2/2019/12/fondo-pantalla-paisaje-header.jpg") ;
+
+  background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.App{
+  max-width: 800px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--background-overlay) ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section-city-weather{
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--section-overlay);
+}
+
+.section-main-temperature{
+  width: 100%;
+
+  padding: 1rem;
+  border-radius: 0.4rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--section-overlay);
+}
+
+.input-city{
+  border: 0.8px solid white;
+  border-radius: 13px;
+  background-color: transparent;
+  color: white;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.input-city:focus{
+  outline: none;
+}
+.search-city-btn{
+  border: none;
+  border-radius: 13px;
+  padding: 8px;
+  font-size: 20px;
+  background-color: white;
+}
+.search-city-btn:hover{
+  cursor: pointer;
+  background-color: lightgray;
+}
+.degrees-button{
+  border: none;
+  border-radius: 13px;
+  padding: 8px;
+  font-size: 20px;
+  background-color: white;
+}
+
+.degrees-button:hover{
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.information-img-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.weatherInformation-card-container{
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-container{
+  height: 130px;
+  width: 200px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+  background-color: var(--section-overlay);
+  padding: 2rem;
+  border-radius: 0.4rem;
+}
+
+.icon-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+.bx{font-size: 25px;
+}
+
+@media (max-width: 700px){
+  html{
+    height: 100vh;
+    background: url(https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+    .App{
+     min-width: 330px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .section-city-weather{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    
+.section-main-temperature{
+  display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+}
+
+  }
